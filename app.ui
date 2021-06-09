@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(40, 42, 54)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="timeFrame">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="dateLabel">
+       <property name="geometry">
+        <rect>
+         <x>291</x>
+         <y>30</y>
+         <width>200</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>20</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 121, 198); font: 20pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>DD Mmm YYYY</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="clockLabel">
+       <property name="geometry">
+        <rect>
+         <x>351</x>
+         <y>110</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 121, 198); font: 20pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>HH:MM</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dayInWeekLabel">
+       <property name="geometry">
+        <rect>
+         <x>301</x>
+         <y>70</y>
+         <width>180</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 121, 198); font: 20pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Day</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="dataFrame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="tempFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="humCircleFrame">
+          <property name="geometry">
+           <rect>
+            <x>99</x>
+            <y>0</y>
+            <width>180</width>
+            <height>180</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+	border: 5px solid rgb(189, 147, 249);
+	border-radius: 90px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="temperature">
+           <property name="geometry">
+            <rect>
+             <x>45</x>
+             <y>20</y>
+             <width>90</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px;
+color: rgb(255, 121, 198);
+font: 12pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>TEMPATURE</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="celsius">
+           <property name="geometry">
+            <rect>
+             <x>65</x>
+             <y>145</y>
+             <width>50</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px;
+color: rgb(255, 121, 198);
+font: 12pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>°C</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tempLabel">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>70</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px; color: rgb(255, 121, 198);font: 30pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>00.0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="humFrame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="tempCircleFrame">
+          <property name="geometry">
+           <rect>
+            <x>99</x>
+            <y>0</y>
+            <width>180</width>
+            <height>180</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+	border: 5px solid rgb(189, 147, 249);
+	border-radius: 90px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="humidity">
+           <property name="geometry">
+            <rect>
+             <x>45</x>
+             <y>20</y>
+             <width>90</width>
+             <height>12</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px;
+color: rgb(255, 121, 198);
+font: 12pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>HUMIDITY</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="percent">
+           <property name="geometry">
+            <rect>
+             <x>65</x>
+             <y>145</y>
+             <width>50</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px;
+color: rgb(255, 121, 198);
+font: 12pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="humLabel">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>70</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 0px; color: rgb(255, 121, 198); font: 30pt &quot;Consolas&quot;;</string>
+           </property>
+           <property name="text">
+            <string>00.0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
