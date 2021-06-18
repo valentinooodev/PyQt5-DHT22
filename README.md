@@ -4,7 +4,11 @@ Copyright © 2021 EvoLab
 This system using Raspberry Pi read temperature and humidity from DHT22 sensor then display it on GUI
 
 ## Graphic User Interface:
+<img src="https://github.com/valentinooodev/PyQt5-DHT22/blob/main/GUI.png" alt="drawing" width="500"/>  
+
 ## System Diagram:
+<img src="https://github.com/valentinooodev/PyQt5-DHT22/blob/main/System.png" alt="drawing" width="500"/>  
+
 ## Hardware Diagram:
 <img src="https://github.com/valentinooodev/PyQt5-DHT22/blob/main/Diagram.png" alt="drawing" width="300"/>  
 
