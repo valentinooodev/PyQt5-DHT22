@@ -100,5 +100,5 @@ git clone https://github.com/valentinooodev/PyQt5-DHT22.git
 cd PtQt5-DHT22
 ```
 ```bash
-python main.py
+python app.py
 ```
