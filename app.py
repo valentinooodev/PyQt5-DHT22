@@ -6,6 +6,9 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+# Powered by EvoLab
+# Author: Valentinooo
+
 from datetime import datetime
 from random import randint
 from PyQt5 import QtCore, QtGui, QtWidgets
