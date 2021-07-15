@@ -84,7 +84,7 @@ wget https://v90.x8top.net/tmp082020/cf/soft/2020/8/ba/4/pyqt_5151.gz
 tar -xzvf pyqt_5151.gz
 ```
 ```bash
-cd pyqt_5151.gz
+cd PyQt5-5.15.1.dev2008081558
 ```
 ```bash
 python configure.py
