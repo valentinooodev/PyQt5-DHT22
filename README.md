@@ -78,13 +78,13 @@ sudo make install
 cd ..
 ```
 ```bash
-wget https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5-5.15.1.dev2008081558.tar.gz
+wget https://v90.x8top.net/tmp082020/cf/soft/2020/8/ba/4/pyqt_5151.gz
 ```
 ```bash
-tar -xzvf PyQt5-5.15.1.dev2008081558.tar.gz
+tar -xzvf pyqt_5151.gz
 ```
 ```bash
-cd PyQt5-5.15.1.dev2008081558
+cd pyqt_5151.gz
 ```
 ```bash
 python configure.py
